@@ -6,10 +6,10 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "cliente")
 data class Cliente(
-    @PrimaryKey(autoGenerate = true) val idCliente: Int,
+    @PrimaryKey(autoGenerate = true) val id: Int,
     @ColumnInfo(name = "nombre") var nombre: String,
     @ColumnInfo(name = "apellido") var apellido: String,
     @ColumnInfo(name = "correo") var correo: String,
-    @ColumnInfo(name = "nombreUsuario") var nombreUsuario: String?,
-    @ColumnInfo(name = "pwd") var pwd: String?,
+    @ColumnInfo(name = "nombreUsuario") var nombreUsuario: String,
+    @ColumnInfo(name = "pwd") var pwd: String
 )

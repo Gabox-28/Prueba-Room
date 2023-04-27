@@ -10,8 +10,8 @@ interface DaoCliente {
     @Insert
     suspend fun agregarCliente(cliente: Cliente)
 
-    @Query("UPDATE cliente SET nombre =:nombre, apellidos =:apellidos, correo =:correo,nombreUsuario =:nombreUsuario, pwd =:pwd  WHERE id =:id")
-    suspend fun actualizarCliente(id: Int, nombre: String,apellidos:String, correo:String,nombreUsuario: String, pwd: String)
+    @Query("UPDATE cliente SET nombre =:nombre, apellido =:apellido, correo =:correo, nombreUsuario =:nombreUsuario, pwd =:pwd WHERE id =:id")
+    suspend fun actualizarCliente(id: Int, nombre: String, apellido:String, correo:String, nombreUsuario: String, pwd: String)
 
     @Query("SELECT * FROM cliente")
     suspend fun obtenerCliente(): MutableList<Cliente>
