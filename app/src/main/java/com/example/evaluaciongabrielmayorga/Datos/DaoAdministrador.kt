@@ -1,10 +1,9 @@
-package com.example.evaluaciongabrielmayorga.Dao
+package com.example.evaluaciongabrielmayorga.Datos
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 import com.example.evaluaciongabrielmayorga.Entidades.Administrador
-import com.example.evaluaciongabrielmayorga.Entidades.Cliente
 
 @Dao
 interface DaoAdministrador {
