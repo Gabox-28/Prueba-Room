@@ -6,7 +6,7 @@ import com.example.evaluaciongabrielmayorga.Entidades.Administrador
 import com.example.evaluaciongabrielmayorga.Entidades.Cliente
 
 @Database(
-    entities = [Cliente::class], [Administrador::class],
+    entities = [Cliente::class, Administrador::class],
     version = 1
 )
 abstract class DBProyecto: RoomDatabase() {

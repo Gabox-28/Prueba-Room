@@ -14,8 +14,8 @@ interface DaoAdministrador {
     @Insert
     suspend fun agregarAdministrador(administrador: Administrador)
 
-    @Query("UPDATE Administrador SET nombre =:nombre, apellidos =:apellidos, nombreUsuario =:nombreUsuario, pwd =:pwd  WHERE id =:id")
-    suspend fun actualizarAdministrador(id: Int, nombre: String, apellidos:String, nombreUsuario: String, pwd: String)
+    @Query("UPDATE Administrador SET nombre =:nombre, apellido =:apellido, nombreUsuario =:nombreUsuario, pwd =:pwd  WHERE id =:id")
+    suspend fun actualizarAdministrador(id: Int, nombre: String, apellido:String, nombreUsuario: String, pwd: String)
 
     @Query("DELETE FROM administrador WHERE id=:id")
     suspend fun borrarAdministrador(id: Int)
